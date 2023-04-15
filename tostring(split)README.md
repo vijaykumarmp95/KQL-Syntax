@@ -1,4 +1,4 @@
-//Query snippet showing how to extract the account name from an email address
+//Query snippet showing how to extract the account name from an email address ( to get "Raju" from "raju@abc.com")
 
 AccountName = tostring(split(RecipientEmailAddress, "@")[0])
 

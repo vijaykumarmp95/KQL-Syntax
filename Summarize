@@ -1,0 +1,36 @@
+https://azurecloudai.blog/2022/01/05/must-learn-kql-part-11-the-summarize-operator/
+=============================================================================================
+Summarize Operator Syntax
+
+Tablename
+| summarize Aggregation [by Group Expression]
+
+================================================================================================
+Simple aggregation functions: count(), sum(), avg(), min(), max(),
+
+Advanced aggregation functions: arg_min(), arg_max(), percentiles(), makelist(), countif()
+================================================================================================
+
+arg_min(), arg_max(): returns the extreme value
+
+percentiles():   returns the value at the percentile
+
+make_list()  returns a list of all values
+
+make_set()   distinct values respectively
+
+countif: counts the number of records that meet a specified condition.
+==========================================================================================
+
+BELOW ARE SOME OF THE EXAMPLES
+==========================================================================================
+
+SecurityEvent
+| where EventID == 4624
+| summarize arg_max(TimeGenerated, *) by Account 
+
+SecurityEvent 
+| summarize AdminSuccessfullLogons = countif(Account contains "Admin" and EventID == 4624), AdminFailedLogons = countif(Account contains "Admin" and EventID == 4625)
+
+
+=======================================================================================

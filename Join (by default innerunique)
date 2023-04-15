@@ -29,10 +29,10 @@ LeftTable | join RightTable on Key  //
 OUTPUT                                              for reference
 ===================================
 
-key  value1  Key1  value2
-b     two     b    10
-c     four    c    20
-c    four     c    30
+key   value1    value2
+b     two       10
+c     four      20
+c     four      30
 
  for reference
  ============================================================

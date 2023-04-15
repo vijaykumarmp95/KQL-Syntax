@@ -1,0 +1,37 @@
+Refernce - https://www.youtube.com/watch?v=-XoOXFGC7RA&list=PLfCIvkkLCtIXUZovtcj9ToHASHeg5PWAS&index=2   AND https://www.w3schools.com/sql/sql_join_inner.asp
+
+Default inner unique - 
+
+only one row from the lefttable is matched for each value of the ON property . The output contains a row for each match of this row with rows from the righttable
+================================================================================================================================================
+
+inner - returns all MATCHING records from left and right table 
+================================================================================================================================================
+
+leftouter - returns all  records from left table and Only MATCHING records from Right table  ( remember Venn diagram w3 schools )
+
+============================================================================================================================================
+
+rightouter - returns all  records from left table and Only MATCHING records from LEFT table ( remember Venn diagram w3 schools )
+
+============================================================================================================================================
+
+fullouter - returns all  records from left and right table . unmatched cells contain NULL values
+
+================================================================================================================================================
+
+leftAnti - returns all  records from left table that do not have matches from right table
+
+=================================================================================================================
+
+Rightanti - returns all  records from right table that do not have matches from left table
+======================================================================================================================
+
+leftSemi  - returns all  records from left table that have matches from the right
+
+==========================================================================================================================
+
+Rightsemi - returns all  records from right table that have matches from the left 
+
+
+

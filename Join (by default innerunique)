@@ -15,4 +15,14 @@ let RightTable = datatable (Key:string, Value2:string)
 'c','30',
 'd','40'
 ];
-LeftTable | join RightTable on key
+LeftTable | join RightTable on Key
+
+
+
+OUTPUT
+===================================
+
+key  value1  Key1  value2
+b     two     b    10
+c     four    c    20
+c    four     c    30

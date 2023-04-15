@@ -5,5 +5,7 @@ AccountName = tostring(split(RecipientEmailAddress, "@")[0])
 ====================================================================================
 
 EmailEvents
+
 | where Timestamp > ago(7d)
+
 | project RecipientEmailAddress, AccountName = tostring(split(RecipientEmailAddress, "@")[0]);

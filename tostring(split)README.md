@@ -10,9 +10,10 @@ EmailEvents
 
 | project RecipientEmailAddress, AccountName = tostring(split(RecipientEmailAddress, "@")[0])
 
-=================================================================================================
+========================================================================================
 OUTPUT
 
 RecepientEmailAddress     Accountname
+
 raju@abc.com              Raju
 kapoor@abc.com            Kapoort

@@ -1,0 +1,18 @@
+You can run the below query in LA demo for reference attched youtube video https://www.youtube.com/watch?v=-XoOXFGC7RA 
+
+//Table setup//
+let LeftTable = datatable (Key:string, Value1:string)
+[
+'a','one',
+'b','two',
+'b','three',
+'c','four'
+];
+let RightTable = datatable (Key:string, Value2:string)
+[
+'b','10',
+'c','20',
+'c','30',
+'d','40'
+];
+LeftTable | join RightTable on key

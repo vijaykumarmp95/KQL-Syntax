@@ -16,4 +16,4 @@ OUTPUT
 RecepientEmailAddress     Accountname
 
 raju@abc.com              Raju
-kapoor@abc.com            Kapoort
+kapoor@abc.com            Kapoor

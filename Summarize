@@ -3,7 +3,7 @@ https://azurecloudai.blog/2022/01/05/must-learn-kql-part-11-the-summarize-operat
 Summarize Operator Syntax
 
 Tablename
-| summarize Aggregation [by Group Expression]
+| summarize Aggregationfunction [by Group Expression]
 
 ================================================================================================
 Simple aggregation functions: count(), sum(), avg(), min(), max(),

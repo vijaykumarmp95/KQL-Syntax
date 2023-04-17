@@ -6,7 +6,7 @@ Tablename
 | summarize Aggregationfunction [by Group Expression]
 
 ================================================================================================
-Simple aggregation functions: count(), sum(), avg(), min(), max(),
+Simple aggregation functions: count(), sum(), avg(), min(), max(), dcount()
 
 Advanced aggregation functions: arg_min(), arg_max(), percentiles(), makelist(), countif()
 ================================================================================================
